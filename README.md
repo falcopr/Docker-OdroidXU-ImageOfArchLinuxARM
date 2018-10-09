@@ -15,12 +15,17 @@ docker images
 
 3. Change Tag to a more appropriate one
 ```
-docker tag ba435fc3422 alarm-v7-base
+docker tag ba435fc3422 alarm-v7hf-base
 ```
 
 4. Build the image via Dockerfile
 ```
-docker build --tag="falcoprescher/alarm-v7-base" .
+docker build --tag="falcoprescher/alarm-v7hf-base" .
+```
+
+5. Run Docker container
+```
+docker run -it --rm --name test falcoprescher/alarm-v7hf-base bash
 ```
 
 
