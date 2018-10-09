@@ -4,19 +4,13 @@ Creating a Image of Arch Linux ARM for Odroid XU
 # Step by step for Odroid
 1. Import Arch Linux ARM Image for Odroid XU into Docker
 
-One liner
-```
-curl -L http://os.archlinuxarm.org/os/ArchLinuxARM-odroid-xu-latest.tar.gz | gunzip | sudo docker import -
-```
-
-Multi liner (but offline)
 ```
 cd images
 wget http://os.archlinuxarm.org/os/ArchLinuxARM-odroid-xu-latest.tar.gz
 gunzip ArchLinuxARM-odroid-xu-latest.tar.gz
 mkdir arch
-tar --warning=no-unknown-keyword --xattrs -xvf ArchLinuxARM-odroid-xu-latest.tar -C arch
-tar --xattrs -cvf ArchLinuxARM-odroid-xu-latest.tar -C arch .
+sudo tar --warning=no-unknown-keyword --xattrs -xvf ArchLinuxARM-odroid-xu-latest.tar -C arch
+sudo tar --xattrs -cvf ArchLinuxARM-odroid-xu-latest.tar -C arch .
 sudo docker image import ArchLinuxARM-odroid-xu-latest.tar
 cd ..
 ```
