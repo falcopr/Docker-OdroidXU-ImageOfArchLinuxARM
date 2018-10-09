@@ -32,3 +32,5 @@ docker run -it --rm --name test falcoprescher/alarm-v7hf-base bash
 - [Creating Docker Image for Raspberry 
 PI](https://glasstty.com/wiki/index.php/Creating_an_Arch_Linux_(ARMv7)_Docker_Image)
 - [Arch Linux ARM for Odroid XU](https://archlinuxarm.org/platforms/armv7/samsung/odroid-xu)
+- [mkinitcpio](https://wiki.archlinux.org/index.php/mkinitcpio)
+- [Removing autodetect hook for mkinitcpio](https://bbs.archlinux.org/viewtopic.php?id=230265)

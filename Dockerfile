@@ -4,4 +4,5 @@ ENV REFRESHED_AT 2018-10-09
 
 RUN pacman-key --init
 RUN pacman-key --populate archlinuxarm
+COPY ./mkinitcpio.conf /etc/mkinitcpio.conf
 RUN pacman -Syu --noconfirm
