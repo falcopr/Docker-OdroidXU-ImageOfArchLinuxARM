@@ -6,3 +6,6 @@ RUN pacman-key --init
 RUN pacman-key --populate archlinuxarm
 COPY ./mkinitcpio.conf /etc/mkinitcpio.conf
 RUN pacman -Syu --noconfirm
+# RUN pacman -Rs groff man-db --noconfirm
+RUN pacman -Scc --noconfirm
+
