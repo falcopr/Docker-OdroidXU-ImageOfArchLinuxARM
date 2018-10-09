@@ -4,8 +4,7 @@ Creating a Image of Arch Linux ARM for Odroid XU
 # Step by step for Odroid
 1. Import Arch Linux ARM Image for Odroid XU into Docker
 ```
-curl -L http://os.archlinuxarm.org/os/ArchLinuxARM-odroid-xu-latest.tar.gz | gunzip | sudo docker import 
--
+curl -L http://os.archlinuxarm.org/os/ArchLinuxARM-odroid-xu-latest.tar.gz | gunzip | sudo docker import -
 ```
 
 2. Check out new Arch Linux ARM image tag in docker
@@ -30,6 +29,6 @@ docker run -it --rm --name test falcoprescher/alarm-v7hf-base bash
 
 
 # Sources
-[Creating Docker Image for Raspberry 
+- [Creating Docker Image for Raspberry 
 PI](https://glasstty.com/wiki/index.php/Creating_an_Arch_Linux_(ARMv7)_Docker_Image)
-[Arch Linux ARM for Odroid XU](https://archlinuxarm.org/platforms/armv7/samsung/odroid-xu)
+- [Arch Linux ARM for Odroid XU](https://archlinuxarm.org/platforms/armv7/samsung/odroid-xu)
