@@ -14,7 +14,11 @@ Multi liner (but offline)
 cd images
 wget http://os.archlinuxarm.org/os/ArchLinuxARM-odroid-xu-latest.tar.gz
 gunzip ArchLinuxARM-odroid-xu-latest.tar.gz
-sudo docker image import ArchLinuxARM-odroid-xu-latest.tar.gz
+mkdir arch
+tar --warning=no-unknown-keyword --xattrs -xvf ArchLinuxARM-odroid-xu-latest.tar -C arch
+tar --xattrs -cvf ArchLinuxARM-odroid-xu-latest.tar -C arch .
+sudo docker image import ArchLinuxARM-odroid-xu-latest.tar
+cd ..
 ```
 
 2. Check out new Arch Linux ARM image tag in docker
