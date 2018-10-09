@@ -1,4 +1,4 @@
-FROM alarm-v7-base
+FROM odroidxu-arch-arm-v7hf-base
 MAINTAINER Falco Prescher
 ENV REFRESHED_AT 2018-10-09
 

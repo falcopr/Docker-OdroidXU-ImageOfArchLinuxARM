@@ -14,7 +14,7 @@ docker images
 
 3. Change Tag to a more appropriate one
 ```
-docker tag ba435fc3422 arch-arm-v7hf-base
+docker tag ba435fc3422 odroidxu-arch-arm-v7hf-base
 ```
 
 4. Build the image via Dockerfile
@@ -26,6 +26,11 @@ docker build --tag="falcox/odroidxu-arch-arm-v7hf" .
 ```
 docker run -it --rm --name test falcox/odroidxu-arch-arm-v7hf bash
 ```
+
+#ÃAdditionals
+- To squash the docker image history append --squash after the docker build command
+- You need to enable experimental features to do this: [How to enable experimental 
+features](https://stackoverflow.com/questions/44346322/how-to-run-docker-with-experimental-functions-on-ubuntu-16-04)
 
 
 # Sources
